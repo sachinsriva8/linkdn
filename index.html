@@ -1,0 +1,486 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./resources/images/fav_icon-linkidn.png" id="favicon">
+    <title>Feed | Linkdin</title>
+    <link rel="stylesheet" href="./resources/style.css">
+    <script src="https://kit.fontawesome.com/5de3719f34.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+<body>
+    <header>
+        <div class="head-container">
+            <a href="#" class="logo">
+                <i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <div  class="searchbar">
+                <div class="search">
+                    <!-- <div class="searchicon"> -->
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.6)" class="mercado-match" width="16" height="16" focusable="false">
+                            <path d="M14.56 12.44L11.3 9.18a5.51 5.51 0 10-2.12 2.12l3.26 3.26a1.5 1.5 0 102.12-2.12zM3 6.5A3.5 3.5 0 116.5 10 3.5 3.5 0 013 6.5z"></path>
+                        </svg>
+                    <!-- </div> -->
+                    <input type="text" placeholder="Search">
+                </div>
+            </div>
+            <a href="#" class="home nav_layout">
+                <div class="homeicon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="currentColor" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M23 9v2h-2v7a3 3 0 01-3 3h-4v-6h-4v6H6a3 3 0 01-3-3v-7H1V9l11-7 5 3.18V2h3v5.09z"></path>
+                    </svg>
+                </div>
+                <div class="hometext nav_text">
+                    <p>Home</p>
+                </div>
+            </a>
+            <a href="#" class="networks nav_layout">
+                <div class="networkicon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.7)" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M12 16v6H3v-6a3 3 0 013-3h3a3 3 0 013 3zm5.5-3A3.5 3.5 0 1014 9.5a3.5 3.5 0 003.5 3.5zm1 2h-2a2.5 2.5 0 00-2.5 2.5V22h7v-4.5a2.5 2.5 0 00-2.5-2.5zM7.5 2A4.5 4.5 0 1012 6.5 4.49 4.49 0 007.5 2z"></path>
+                    </svg>
+                </div>
+                <div class="networtext nav_text">
+                    <p>My Network</p>
+                </div>
+            </a>
+            <a href="#" class="jobs nav_layout">
+                <div class="jobicon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.7)" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M17 6V5a3 3 0 00-3-3h-4a3 3 0 00-3 3v1H2v4a3 3 0 003 3h14a3 3 0 003-3V6zM9 5a1 1 0 011-1h4a1 1 0 011 1v1H9zm10 9a4 4 0 003-1.38V17a3 3 0 01-3 3H5a3 3 0 01-3-3v-4.38A4 4 0 005 14z"></path>
+                    </svg>
+                </div>
+                <div class="jobtext nav_text">
+                    <p>Jobs</p>
+                </div>
+            </a>
+            <a href="#" class="messaging nav_layout">
+                <div class="messageicon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.7)" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M16 4H8a7 7 0 000 14h4v4l8.16-5.39A6.78 6.78 0 0023 11a7 7 0 00-7-7zm-8 8.25A1.25 1.25 0 119.25 11 1.25 1.25 0 018 12.25zm4 0A1.25 1.25 0 1113.25 11 1.25 1.25 0 0112 12.25zm4 0A1.25 1.25 0 1117.25 11 1.25 1.25 0 0116 12.25z"></path>
+                    </svg>
+                </div>
+                <div class="messagetext nav_text">
+                    <p>Messaging</p>
+                </div>
+            </a>
+            <a href="#" class="notification nav_layout">
+                <div class="notif-icon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.7)" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M22 19h-8.28a2 2 0 11-3.44 0H2v-1a4.52 4.52 0 011.17-2.83l1-1.17h15.7l1 1.17A4.42 4.42 0 0122 18zM18.21 7.44A6.27 6.27 0 0012 2a6.27 6.27 0 00-6.21 5.44L5 13h14z"></path>
+                    </svg>
+                </div>
+                <div class="notif-text nav_text">
+                    <p>Notification</p>
+                </div>
+            </a>
+            <a href="#" class="profile nav_layout">
+                <div class="profileicon nav_icon">
+                    <!-- <img width="24" src="https://media.licdn.com/dms/image/C5635AQE2SI7q7OX2vw/profile-framedphoto-shrink_100_100/0/1607062842973?e=1688482800&amp;v=beta&amp;t=--SXF30vDT2KpXC84CE3Rf_utGlpylOIYUGdU7Q0_ho" height="24" alt="Sachin Srivastava" id="ember16"> -->
+                    <img width="24" src="https://media.licdn.com/dms/image/C5635AQE2SI7q7OX2vw/profile-framedphoto-shrink_100_100/0/1607062842973?e=1691154000&amp;v=beta&amp;t=fDViYDVqikD5lyTsOnhoRHmgy6RYT2JfWHAFkntqlO4" height="24" alt="Sachin Srivastava" id="ember16" class="global-nav__me-photo evi-image ember-view">
+                </div>
+                <div class="profiletext nav_text">
+                    <p>Me <i class="fas fa-caret-down"></i></p>
+                </div>
+            </a>
+            <a href="#" class="business nav_layout">
+                <div class="businessicon nav_icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.7)" class="mercado-match" width="24" height="24" focusable="false">
+                        <path d="M3 3h4v4H3zm7 4h4V3h-4zm7-4v4h4V3zM3 14h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4zM3 21h4v-4H3zm7 0h4v-4h-4zm7 0h4v-4h-4z"></path>
+                    </svg>
+                </div>
+                <div class="businesstext nav_text">
+                    <p>For Business <i class="fas fa-caret-down"></i></p>
+                </div>
+            </a>
+            <a href="#" class="premium">
+                <p class="premiumtext"><ins>Try Premium for free</ins></p>
+            </a>
+        </div>
+    </header>
+    <div class="fixed_message">
+        <div class="fixed-item-1">
+            <img src="https://media.licdn.com/dms/image/C5635AQE2SI7q7OX2vw/profile-framedphoto-shrink_100_100/0/1607062842973?e=1691154000&amp;v=beta&amp;t=fDViYDVqikD5lyTsOnhoRHmgy6RYT2JfWHAFkntqlO4" loading="lazy" alt="Sachin Srivastava" id="ember128" class="presence-entity__image EntityPhoto-circle-1  evi-image lazy-image ember-view">
+            <p class="message">Message</p>
+        </div>
+        <div class="fixed-item-2">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.9)"><path d="M3 9.5A1.5 1.5 0 1 1 4.5 8 1.5 1.5 0 0 1 3 9.5zM11.5 8A1.5 1.5 0 1 0 13 6.5 1.5 1.5 0 0 0 11.5 8zm-5 0A1.5 1.5 0 1 0 8 6.5 1.5 1.5 0 0 0 6.5 8z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="16" height="16"><path d="M15 2.53a1.51 1.51 0 0 1-.44 1L9.15 9 6 10l1-3.12 5.44-5.44A1.5 1.5 0 0 1 15 2.53zM12 11a1 1 0 0 1-1 1H5a1 1 0 0 1-1-1V5a1 1 0 0 1 1-1h3V2H5a3 3 0 0 0-3 3v6a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V8h-2z"/></svg>
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="16" height="16"><path d="M15 11 8 6.39 1 11V8.61L8 4l7 4.61z"/></svg>
+        </div>
+    </div>
+    <div class="rest">
+        <div class="rest-container">
+            <div class="left-container">
+                <div class="left-top">
+                    <div class="lt-item1">
+                        <img width="64" src="https://media.licdn.com/dms/image/C5635AQE2SI7q7OX2vw/profile-framedphoto-shrink_100_100/0/1607062842973?e=1691154000&amp;v=beta&amp;t=fDViYDVqikD5lyTsOnhoRHmgy6RYT2JfWHAFkntqlO4" loading="lazy" height="64" alt="Photo of Sachin Srivastava" id="ember136" class="feed-identity-module__member-photo EntityPhoto-circle-5 evi-image lazy-image ember-view">
+                    </div>
+                    <div class="lt-item2">
+                        <div class="name">
+                            <p>Sachin Srivastava</p>
+                        </div>
+                        <div class="role">
+                            <p>Front End Developer</p>
+                        </div>
+                    </div>
+                    <div class="lt-item3">
+                        <a href="#"><p class="who_veiw">Who viewed your profile <span class="num">29</span></p></a>
+                        <a href=""><p class="who_veiw">Impression on your post <span class="num">17</span></p></a>
+                    </div>
+                    <a href="" class="lt-item4">
+                        <p>Access execlusive tools & insights</p>
+                        <div class="hired">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" class="mercado-match" width="12" height="12" focusable="false">
+                                <path d="M20 20a3.36 3.36 0 001-2.39V6.38A3.38 3.38 0 0017.62 3H6.38A3.36 3.36 0 004 4z" fill="#f8c77e"></path>
+                                <path d="M4 4a3.36 3.36 0 00-1 2.38v11.24A3.38 3.38 0 006.38 21h11.24A3.36 3.36 0 0020 20z" fill="#e7a33e"></path>
+                            </svg>
+                            <div class="hired_text">
+                                <p class="fr_free"><ins>Try Premium free.</ins></p>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="#" class="lt-item5">
+                        <i class="fas fa-bookmark"></i>
+                        <p>My items</p>
+                    </a>
+                </div>
+                <div class="left-bottom">
+                    <div class="lb-item1">
+                        <a href="#"><p class="recent">Recent</p></a>
+                        <a href="#" class="rcnt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Data Scientist, Data Analyst, D...</p>
+                        </a>
+                        <a href="#" class="rcnt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"/></svg>
+                            <p>businessintelligence</p>
+                        </a>
+                        <a href="#" class="rcnt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Data Scientist & Analyst</p>
+                        </a>
+                        <a href="#" class="rcnt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Machine Learning Community ...</p>
+                        </a>
+                        <a href="#" class="rcnt-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>JOB CARNIVAL</p>
+                        </a>
+                    </div>
+                    <div class="lb-item2">
+                        <a href="#"><p class="groups">Groups</p></a>
+                        <a href="#" class="group-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Data Scientist, Data Analyst, D...</p>
+                        </a>
+                        <a href="#" class="group-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Data Scientist & Analyst</p>
+                        </a>
+                        <a href="#" class="group-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M8.5 7h-1A1.5 1.5 0 0 0 6 8.5V14h4V8.5A1.5 1.5 0 0 0 8.5 7zm4.25 1h-.5A1.25 1.25 0 0 0 11 9.25V14h3V9.25A1.25 1.25 0 0 0 12.75 8z"/><circle cx="8" cy="4" r="2"/><circle cx="12.5" cy="5.5" r="1.5"/><path d="M3.75 8h-.5A1.25 1.25 0 0 0 2 9.25V14h3V9.25A1.25 1.25 0 0 0 3.75 8z"/><circle cx="3.5" cy="5.5" r="1.5"/></svg>
+                            <p>Machine Learning Community ...</p>
+                        </a>
+                        <a href="#" class="smore">
+                            <p>Show more <i class="fa-solid fa-angle-down"></i></p>
+                        </a>
+                    </div>
+                    <div class="lb-item3">
+                        <a href="#"><p>Events</p></a>
+                        <a href="#" class="plus">
+                            <i class="fa-solid fa-plus"></i>
+                        </a>
+                    </div>
+                    <div class="lb-item4">
+                        <a href="#"><p class="hash">Followed Hashtags</p></a>
+                        <a href="#" class="hash-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"/></svg>
+                            <p>bussinessinteligence</p>
+                        </a>
+                        <a href="#" class="hash-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"/></svg>
+                            <p>algorithms</p>
+                        </a>
+                        <a href="#" class="hash-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.75)"><path d="M6.65 11h2l-.33 3h2l.33-3H14V9h-3.13l.26-2H14V5h-2.65l.33-3h-2l-.33 3h-2l.33-3h-2l-.33 3H2v2h3.13l-.26 2H2v2h2.65l-.33 3h2zm.48-4h2l-.26 2h-2z"/></svg>
+                            <p>data</p>
+                        </a>
+                        <a href="#" class="smore">
+                            <p>Show more <i class="fa-solid fa-angle-down"></i></p>
+                        </a>
+                    </div>
+                    <a href="#" class="lb-item5">
+                        <p>Discover more</p>
+                    </a>
+                </div>
+            </div>
+            <div class="main">
+                <div class="main-container">
+                    <div class="post">
+                        <div class="post-item-1">
+                            <img src="https://media.licdn.com/dms/image/C5635AQE2SI7q7OX2vw/profile-framedphoto-shrink_100_100/0/1607062842973?e=1691154000&amp;v=beta&amp;t=fDViYDVqikD5lyTsOnhoRHmgy6RYT2JfWHAFkntqlO4" alt="Visit profile for Sachin Srivastava" id="ember25" class="EntityPhoto-circle-3 evi-image ember-view">
+                            <button> <span>Start a post</span></button>
+                        </div>
+                        <div class="post-item-2">
+                            <a href="#" class="post_feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#70b5f9"><path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm1 13a1 1 0 0 1-.29.71L16 14l-2 2-6-6-4 4V7a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1zm-2-7a2 2 0 1 1-2-2 2 2 0 0 1 2 2z"/></svg>
+                                <p class="photo">Photo</p>
+                            </a>
+                            <a href="#" class="post_feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#7fc15e"><path d="M19 4H5a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3zm-9 12V8l6 4z"/></svg>
+                                <p class="video">Video</p>
+                            </a>
+                            <a href="#" class="post_feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#e7a336" class="mercado-match" width="24" height="24"><path d="M3 3v15a3 3 0 0 0 3 3h12a3 3 0 0 0 3-3V3zm13 1.75A1.25 1.25 0 1 1 14.75 6 1.25 1.25 0 0 1 16 4.75zm-8 0A1.25 1.25 0 1 1 6.75 6 1.25 1.25 0 0 1 8 4.75zM19 18a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V9h14zm-5.9-3a1 1 0 0 0-1-1H12a3.12 3.12 0 0 0-1 .2l-1-.2v-3h3.9v1H11v1.15a3.7 3.7 0 0 1 1.05-.15 1.89 1.89 0 0 1 2 1.78V15a1.92 1.92 0 0 1-1.84 2H12a1.88 1.88 0 0 1-2-1.75 1 1 0 0 1 0-.25h1a.89.89 0 0 0 1 1h.1a.94.94 0 0 0 1-.88z"/></svg>
+                                <p class="event">Event</p>
+                            </a>
+                            <a href="#" class="post_feature">
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="#f5987e" class="mercado-match" width="24" height="24"><path d="M21 3v2H3V3zm-6 6h6V7h-6zm0 4h6v-2h-6zm0 4h6v-2h-6zM3 21h18v-2H3zM13 7H3v10h10z"/></svg>
+                                <p class="article">Write article</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="seprator">
+                        <hr class="line">
+                        <span class="sort">Sort by:</span>
+                        <span class="top">Top <i class="fa-solid fa-caret-down"></i></span>
+                    </div>
+                    <div class="feed">
+                        <div class="repost-container">
+                            <div class="reposted">
+                                <div class="repost-item-1">
+                                    <img width="24" src="https://media.licdn.com/dms/image/C4D03AQF6fN153ZNKMw/profile-displayphoto-shrink_100_100/0/1659463769276?e=1694044800&amp;v=beta&amp;t=ruaLR0C1V-laxwCkjuLvCDhsJztd1jYQiW7BAN5FfDU" loading="lazy" height="24" alt="Ajay’s profile photo" id="ember361" class="ivm-view-attr__img--centered EntityPhoto-circle-0   evi-image lazy-image ember-view">
+                                    <p class="profile_name">Ajay Ohri <span>reposted it</span></p>
+                                </div>
+                                <div class="repost-item-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M14 12a2 2 0 1 1-2-2 2 2 0 0 1 2 2zM4 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm16 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M13.42 12 20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-1">
+                            <div class="post_profile">
+                                <div class="post_profile_items">
+                                    <img src="https://media.licdn.com/dms/image/C4E03AQFdH9BhRhXOhQ/profile-displayphoto-shrink_100_100/0/1516227532279?e=1694044800&amp;v=beta&amp;t=bAYvnzVH9Egboew0FEebUKODHMeSO2lICROdD3oXOPI" loading="lazy" alt="Pareekh Jain" id="ember420" class="presence-entity__image  ivm-view-attr__img--centered EntityPhoto-circle-3  update-components-actor__avatar-image EntityPhoto-circle-3 evi-image lazy-image ember-view">
+                                    <div class="profile_desc">
+                                        <p class="profile_n">Pareekh Jain <span> &#x2022; 2nd</span></p>
+                                        <p class="experience">CEO EIIRTrend. EIIR (Engineering, IoT, Industry 4.0, R&D) Analyst.</p>
+                                        <div class="post_time">
+                                            <p class="days">2d &#x2022; </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.6)" class="mercado-match" width="16" height="16"><path d="M8 1a7 7 0 1 0 7 7 7 7 0 0 0-7-7zM3 8a5 5 0 0 1 1-3l.55.55A1.5 1.5 0 0 1 5 6.62v1.07a.75.75 0 0 0 .22.53l.56.56a.75.75 0 0 0 .53.22H7v.69a.75.75 0 0 0 .22.53l.56.56a.75.75 0 0 1 .22.53V13a5 5 0 0 1-5-5zm6.24 4.83 2-2.46a.75.75 0 0 0 .09-.8l-.58-1.16A.76.76 0 0 0 10 8H7v-.19a.51.51 0 0 1 .28-.45l.38-.19a.74.74 0 0 1 .68 0L9 7.5l.38-.7a1 1 0 0 0 .12-.48v-.85a.78.78 0 0 1 .21-.53l1.07-1.09a5 5 0 0 1-1.54 9z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#70b5f9" class="mercado-match" width="16" height="16"><path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"/></svg>
+                                    <p class="txt">Follow</p>
+                                </a>
+                            </div>
+                            <div class="post_text">
+                                <p class="para">What a school concept in Jaisalmer for girls. Oval-shaped sustainable architecture keeps the school cool even at 50 deg C temperature. Renewable energy takes care of electricity needs. We need more such schools <a href="#"><span>...see more</span></a></p>
+                            </div>
+                            <div class="post_video">
+                                <div class="video-container">
+                                    <video id="ember12792_html5_api" class="vjs-tech" tabindex="-1" role="application" preload="metadata" poster="https://media.licdn.com/dms/image/D5605AQF3AtjTB3F7xA/videocover-high/0/1690544613009?e=1691150400&amp;v=beta&amp;t=6I_uDDRMKA6gVBbJTdUW44sE0r4iEVbp1qngOpZEvp0" src="https://dms.licdn.com/playlist/vid/D5605AQF3AtjTB3F7xA/mp4-720p-30fp-crf28/0/1690544621569?e=1691150400&amp;v=beta&amp;t=ugqd_ryXtYHcp0mRfEqNBUw88RtxS2UmEtXFk5kWvjc" autoplay="autoplay" controls></video>
+                                </div>
+                                <div class="likes-container">
+                                    <div class="likes">
+                                        <div class="reaction">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/emei2gdl9ikg7penkh9ij9llx" alt="like" data-test-reactions-icon-type="LIKE" data-test-reactions-icon-theme="dark">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--1 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-EMPATHY data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/esahr356vrv0vklww6hcjar1j" alt="love" data-test-reactions-icon-type="EMPATHY" data-test-reactions-icon-theme="dark">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--2 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-PRAISE data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/9wt27hvi2lgll1v30u00n0p5p" alt="celebrate" data-test-reactions-icon-type="PRAISE" data-test-reactions-icon-theme="dark">
+                                            <span class="r_number">&nbsp;4,018</span>
+                                        </div>
+                                        <div class="comments">
+                                            <p class="coments_desc">86 comments &#x2022; 563 reposts</p>
+                                        </div>
+                                    </div>
+                                    <div class="post1-foot">
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)"><path d="m19.46 11-3.91-3.91a7 7 0 0 1-1.69-2.74l-.49-1.47A2.76 2.76 0 0 0 10.76 1 2.75 2.75 0 0 0 8 3.74v1.12a9.19 9.19 0 0 0 .46 2.85L8.89 9H4.12A2.12 2.12 0 0 0 2 11.12a2.16 2.16 0 0 0 .92 1.76A2.11 2.11 0 0 0 2 14.62a2.14 2.14 0 0 0 1.28 2 2 2 0 0 0-.28 1 2.12 2.12 0 0 0 2 2.12v.14A2.12 2.12 0 0 0 7.12 22h7.49a8.08 8.08 0 0 0 3.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 0 1-2.69.63H7.72a1 1 0 0 1-1-.72l-.25-.87-.85-.41A1 1 0 0 1 5 17l.17-1-.76-.74A1 1 0 0 1 4.27 14l.66-1.09-.73-1.1a.49.49 0 0 1 .08-.7.48.48 0 0 1 .34-.11h7.05l-1.31-3.92A7 7 0 0 1 10 4.86V3.75a.77.77 0 0 1 .75-.75.75.75 0 0 1 .71.51L12 5a9 9 0 0 0 2.13 3.5l4.5 4.5H19z"/></svg>
+                                            <p class="post1-text">Like</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M16 4H8a7 7 0 0 0 0 14h4v4l8.16-5.39A6.78 6.78 0 0 0 23 11a7 7 0 0 0-7-7zm-8 8.25A1.25 1.25 0 1 1 9.25 11 1.25 1.25 0 0 1 8 12.25zm4 0A1.25 1.25 0 1 1 13.25 11 1.25 1.25 0 0 1 12 12.25zm4 0A1.25 1.25 0 1 1 17.25 11 1.25 1.25 0 0 1 16 12.25z"/></svg>
+                                            <p class="post1-text">Comment</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)"><path d="M13.96 5H6c-.55 0-1 .45-1 1v10H3V6c0-1.66 1.34-3 3-3h7.96L12 0h2.37L17 4l-2.63 4H12l1.96-3zm5.54 3H19v10c0 .55-.45 1-1 1h-7.96L12 16H9.63L7 20l2.63 4H12l-1.96-3H18c1.66 0 3-1.34 3-3V8h-1.5z"/></svg>
+                                            <p class="post1-text">Repost</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M21 3 0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"/></svg>
+                                            <p class="post1-text">Send</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="feed feed2">
+                        <div class="repost-container">
+                            <div class="reposted">
+                                <div class="repost-item-1">
+                                    <img width="24" src="https://media.licdn.com/dms/image/C4D0BAQFLtas013Qekw/company-logo_100_100/0/1669918644940?e=1696464000&amp;v=beta&amp;t=7R997IeWz4ErYl73GRyi6cPMdvFB86du1MmghxP_2qc" loading="lazy" height="24" alt="View Data Science Reality" id="ember33" class="ivm-view-attr__img--centered EntityPhoto-square-0   evi-image lazy-image ember-view">
+                                    <p class="profile_name">Data Science Reality <span>liked this</span></p>
+                                </div>
+                                <div class="repost-item-2">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M14 12a2 2 0 1 1-2-2 2 2 0 0 1 2 2zM4 10a2 2 0 1 0 2 2 2 2 0 0 0-2-2zm16 0a2 2 0 1 0 2 2 2 2 0 0 0-2-2z"/></svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M13.42 12 20 18.58 18.58 20 12 13.42 5.42 20 4 18.58 10.58 12 4 5.42 5.42 4 12 10.58 18.58 4 20 5.42z"/></svg>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="post-1">
+                            <div class="post_profile">
+                                <div class="post_profile_items">
+                                    <img src="https://media.licdn.com/dms/image/D4D03AQFXvogBraR6bQ/profile-displayphoto-shrink_100_100/0/1665848849177?e=1694044800&amp;v=beta&amp;t=Nlet5OdozdqzSsJCaT-w9v3l5ipfdhMY09c4ScYMl_U" loading="lazy" alt="Arif Alam" id="ember75" class="presence-entity__image  ivm-view-attr__img--centered EntityPhoto-circle-3  update-components-actor__avatar-image EntityPhoto-circle-3 evi-image lazy-image ember-view">
+                                    <div class="profile_desc">
+                                        <p class="profile_n">Arif Alam <span> &#x2022; 2nd</span></p>
+                                        <p class="experience">Sharing the Art of Data Science | Follow to Accelerate Your Learning | 0 → 150k+ Followers in 1 year | Join the Data-driven Future ⚡️</p>
+                                        <div class="post_time">
+                                            <p class="days">1w &#x2022; </p>
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.6)" class="mercado-match" width="16" height="16"><path d="M8 1a7 7 0 1 0 7 7 7 7 0 0 0-7-7zM3 8a5 5 0 0 1 1-3l.55.55A1.5 1.5 0 0 1 5 6.62v1.07a.75.75 0 0 0 .22.53l.56.56a.75.75 0 0 0 .53.22H7v.69a.75.75 0 0 0 .22.53l.56.56a.75.75 0 0 1 .22.53V13a5 5 0 0 1-5-5zm6.24 4.83 2-2.46a.75.75 0 0 0 .09-.8l-.58-1.16A.76.76 0 0 0 10 8H7v-.19a.51.51 0 0 1 .28-.45l.38-.19a.74.74 0 0 1 .68 0L9 7.5l.38-.7a1 1 0 0 0 .12-.48v-.85a.78.78 0 0 1 .21-.53l1.07-1.09a5 5 0 0 1-1.54 9z"/></svg>
+                                        </div>
+                                    </div>
+                                </div>
+                                <a href="#" class="follow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" data-supported-dps="16x16" fill="#70b5f9" class="mercado-match" width="16" height="16"><path d="M14 9H9v5H7V9H2V7h5V2h2v5h5z"/></svg>
+                                    <p class="txt">Follow</p>
+                                </a>
+                            </div>
+                            <div class="post_text">
+                                <p class="para">AI-generated images of future Apple $AAPL products (and CEO Tim Cook) (using MidJourney ai): 🫨</p>
+                            </div>
+                            <div class="post_video">
+                                <a href="#" class="image-container">
+                                    <img  src="https://media.licdn.com/dms/image/D4D22AQEMCBh6iREzzA/feedshare-shrink_800/0/1687522108274?e=1691020800&amp;v=beta&amp;t=6adlxoWO1YcCreRv4ZHIiJIMwPn4-urd8-7eyiNSxw8" loading="lazy"  alt="No alternative text description for this image" id="first" >
+                                    <img  src="https://media.licdn.com/dms/image/D4D22AQFQowxcBw-cyA/feedshare-shrink_800/0/1687522108765?e=1691020800&amp;v=beta&amp;t=QhhWqf3cDV_bPKLBNsFbPOzT8vORuMUa1dyd2oxF2OQ" loading="lazy"  alt="No alternative text description for this image" id="second" >
+                                    <img  src="https://media.licdn.com/dms/image/D4D22AQG0w368PymdCQ/feedshare-shrink_800/0/1687522108487?e=1691020800&amp;v=beta&amp;t=qdKDDeCri6hNrW7kajleeWaDxts4CJfE1k0dPHgoNOg" loading="lazy"  alt="No alternative text description for this image" id="third" >
+                                    <img  src="https://media.licdn.com/dms/image/D4D22AQHsUzbl5c5pow/feedshare-shrink_800/0/1687522108506?e=1691020800&amp;v=beta&amp;t=j-KVsO2CWVC3M6RgYaWh2JirB_xrM2edcrQm7yyAtTs" loading="lazy"  alt="No alternative text description for this image" id="fourth" >
+                                    <img  src="https://media.licdn.com/dms/image/D4D22AQEc0d1FHLsiSw/feedshare-shrink_800/0/1687522108231?e=1691020800&amp;v=beta&amp;t=FnxRciFQ96BYb1r3A7avGR_WaxSPOLkhj1QRapeFSm8" loading="lazy"  alt="No alternative text description for this image" id="fifth" >
+                                </a>
+                                <div class="likes-container">
+                                    <div class="likes">
+                                        <div class="reaction">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--0 reactions-icon__consumption--small data-test-reactions-icon-type-LIKE data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/emei2gdl9ikg7penkh9ij9llx" alt="like" data-test-reactions-icon-type="LIKE" data-test-reactions-icon-theme="dark">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--1 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-ENTERTAINMENT data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/41j9d0423ck1snej32brbuuwg" alt="funny" data-test-reactions-icon-type="ENTERTAINMENT" data-test-reactions-icon-theme="dark">
+                                            <img class="reactions-icon social-detail-social-counts__count-icon social-detail-social-counts__count-icon--2 reactions-icon__consumption--small reactions-icon--stacked data-test-reactions-icon-type-PRAISE data-test-reactions-icon-theme-dark" src="https://static.licdn.com/sc/h/9wt27hvi2lgll1v30u00n0p5p" alt="celebrate" data-test-reactions-icon-type="PRAISE" data-test-reactions-icon-theme="dark">
+                                            <span class="r_number">&nbsp;398</span>
+                                        </div>
+                                        <div class="comments">
+                                            <p class="coments_desc">21 comments &#x2022; 11 reposts</p>
+                                        </div>
+                                    </div>
+                                    <div class="post1-foot">
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)"><path d="m19.46 11-3.91-3.91a7 7 0 0 1-1.69-2.74l-.49-1.47A2.76 2.76 0 0 0 10.76 1 2.75 2.75 0 0 0 8 3.74v1.12a9.19 9.19 0 0 0 .46 2.85L8.89 9H4.12A2.12 2.12 0 0 0 2 11.12a2.16 2.16 0 0 0 .92 1.76A2.11 2.11 0 0 0 2 14.62a2.14 2.14 0 0 0 1.28 2 2 2 0 0 0-.28 1 2.12 2.12 0 0 0 2 2.12v.14A2.12 2.12 0 0 0 7.12 22h7.49a8.08 8.08 0 0 0 3.58-.84l.31-.16H21V11zM19 19h-1l-.73.37a6.14 6.14 0 0 1-2.69.63H7.72a1 1 0 0 1-1-.72l-.25-.87-.85-.41A1 1 0 0 1 5 17l.17-1-.76-.74A1 1 0 0 1 4.27 14l.66-1.09-.73-1.1a.49.49 0 0 1 .08-.7.48.48 0 0 1 .34-.11h7.05l-1.31-3.92A7 7 0 0 1 10 4.86V3.75a.77.77 0 0 1 .75-.75.75.75 0 0 1 .71.51L12 5a9 9 0 0 0 2.13 3.5l4.5 4.5H19z"/></svg>
+                                            <p class="post1-text">Like</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M16 4H8a7 7 0 0 0 0 14h4v4l8.16-5.39A6.78 6.78 0 0 0 23 11a7 7 0 0 0-7-7zm-8 8.25A1.25 1.25 0 1 1 9.25 11 1.25 1.25 0 0 1 8 12.25zm4 0A1.25 1.25 0 1 1 13.25 11 1.25 1.25 0 0 1 12 12.25zm4 0A1.25 1.25 0 1 1 17.25 11 1.25 1.25 0 0 1 16 12.25z"/></svg>
+                                            <p class="post1-text">Comment</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)"><path d="M13.96 5H6c-.55 0-1 .45-1 1v10H3V6c0-1.66 1.34-3 3-3h7.96L12 0h2.37L17 4l-2.63 4H12l1.96-3zm5.54 3H19v10c0 .55-.45 1-1 1h-7.96L12 16H9.63L7 20l2.63 4H12l-1.96-3H18c1.66 0 3-1.34 3-3V8h-1.5z"/></svg>
+                                            <p class="post1-text">Repost</p>
+                                        </a>
+                                        <a href="#" class="post1-foot-items">
+                                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" data-supported-dps="24x24" fill="hsla(0,0%,100%,0.9)" class="mercado-match" width="24" height="24"><path d="M21 3 0 10l7.66 4.26L16 8l-6.26 8.34L14 24l7-21z"/></svg>
+                                            <p class="post1-text">Send</p>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right-top">
+                    <div class="rt-item1">
+                        <p class="link_news">LinkedIn News</p>
+                        <svg class="cursive" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" id="signal-notice-small" data-supported-dps="16x16" fill="hsla(0,0%,100%,0.9)">
+                            <path d="M12 2H4a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2V4a2 2 0 00-2-2zm-3 8v2H7.5A1.5 1.5 0 016 10.5a1.56 1.56 0 01.1-.5l1.08-3h2.13l-1.09 3zm0-3.75A1.25 1.25 0 1110.25 5 1.25 1.25 0 019 6.25z"/>
+                        </svg>
+                    </div>
+                    <li class="news_list"> 
+                        <a href="#">
+                            <span class="news"> Top trends in AI, finance, and retail</span>
+                            <div class="news-stat"><span class="news_time">Top News</span><span class="news_readers"> &#x2022; 1,805 readers</span></div>
+                        </a>
+                    </li>
+                    <li class="news_list">
+                        <a href="#">
+                            <span class="news">Decoding the stock market's rally</span>
+                            <div class="news-stat"><span class="news_time">1d ago</span><span class="news_readers"> &#x2022; 500 readers</span></div>
+                        </a>
+                    </li>
+                    <li class="news_list">
+                        <a href="">
+                            <span class="news">Upgrading skills for the age of AI</span>
+                            <div class="news-stat"><span class="news_time">2d ago</span><span class="news_readers"> &#x2022; 805 readers</span></div>
+                        </a>
+                    </li>
+                    <li class="news_list">
+                        <a href="#">
+                            <span class="news">Canada unveils new open work permit</span>
+                            <div class="news-stat"><span class="news_time">3d ago</span><span class="news_readers"> &#x2022; 1,107 readers</span></div>
+                        </a>
+                    </li>
+                    <li class="news_list">
+                        <a href="">
+                            <span class="news">How will AI affect retail?</span>
+                            <div class="news-stat"><span class="news_time">4d ago</span><span class="news_readers"> &#x2022; 380 readers</span></div>
+                        </a>
+                    </li >
+                    <a href="" class="rt-item2">
+                        <p class="smore">Show more <i class="fa-solid fa-angle-down"></i> </p>
+                    </a>
+                </div>
+                <div class="make_sticky">
+                    <div class="right-mid">
+                        <a href="" class="iframe">
+                            <div class="rm-item1">
+                                <p>Ad <i class="fa-solid fa-ellipsis"></i></p>
+                            </div>
+                            <div class="rm-item2">
+                                <p class="unlock">Sachin, unlock your full potential with linkedin premium</p>
+                            </div>
+                            <div class="rm-item3">
+                                <img class="photo" src="https://media.licdn.com/dms/image/C4D03AQHTiohhYLUjbw/profile-displayphoto-shrink_100_100/0/1517069231883?e=1693440000&amp;v=beta&amp;t=hXuL6XKn6r1iFS_xnD2JEvqJO-n1X1IOkRYJh8FhuLQ" class="da-card-creative__profile-image" alt="Sachin">
+                                <img src="https://media.licdn.com/dms/image/C560EAQEkljsPdDVhZw/rightRail-logo-shrink_200_200/0/1630999581528?e=1691154000&amp;v=beta&amp;t=Zb3fMGiBN5w_Kj8GmIiH2jk6q9EZ5BTLbkAY3-0CsSk" alt="LinkedIn Premium">
+                            </div>
+                            <div class="rm-item4">
+                                <p>See, who viewed your profile in the last 90 days</p>
+                            </div>
+                            <div class="rm-item5">
+                                <button value="Try for free">Try for free</button>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="right-bottom">
+                        <div class="rb-item1">
+                            <a href="#">About</a>
+                            <a href="#">Accessiility</a>
+                            <a href="#">Help Center</a>
+                            <a href="#" class="arrow">Privacy & Terms <i class="fa-solid fa-caret-down"></i></a> <a href="#">Ad Choices</a>
+                            <a href="#">Advertising</a> 
+                            <a href="#" class="arrow">Business Services <i class="fa-solid fa-caret-down"></i></a>
+                            <a href="#">Get the linkedin app</a> 
+                            <a href="#">More</a>
+                        </div>
+                        <div class="rb-item2">
+                            <a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="loader__linkedin-logo" width="56" height="14" viewBox="0 0 190 48"><path d="M58 27.22V41h-7V28.88c0-3.7-2.07-5.24-4-5.24a5 5 0 0 0-5.14 4.85 4.34 4.34 0 0 0 0 .51v12H35V18h6.6v3.25h.09c.69-1.41 3.64-3.75 7.66-3.75S58 20.22 58 27.22ZM24 41h7V18h-7Zm3.5-34.55a4.05 4.05 0 1 0 4.1 4.05 4 4 0 0 0-4-4ZM190 3.5v41a3.5 3.5 0 0 1-3.5 3.5h-41a3.5 3.5 0 0 1-3.5-3.5v-41a3.5 3.5 0 0 1 3.5-3.5h41a3.5 3.5 0 0 1 3.5 3.5ZM156 18h-7v23h7Zm.6-7.5a4.1 4.1 0 1 0-4.15 4.05h.05a4 4 0 0 0 4.1-3.9ZM183 27.22c0-7-4.63-9.72-8.65-9.72s-7 2.34-7.66 3.75h-.09V18H160v23h7V29c0-3.69 2.51-5.33 4.95-5.33 2 0 4.05 1.54 4.05 5.24V41h7ZM8 7H0v34h21v-7H8Zm100 22.77v2H91a1.33 1.33 0 0 0 .11.43c.58 1.93 2.67 3.56 5.75 3.56a6.3 6.3 0 0 0 5.14-2.24l5.1 3.18a12.72 12.72 0 0 1-10.45 4.8C89.94 41.5 84 37.42 84 29.59S90 17.5 96.44 17.5 108 21.81 108 29.77ZM101 27c0-2.4-1.56-4.38-4.75-4.38-3 0-5.09 2-5.25 4.38Zm-15.74-9h-8.58l-7.54 9.37H69V7h-7v34h7V30h.14l7.72 11h8.77L76.2 28.43ZM128 7h7v34h-6.6v-3h-.09c-.88 1.52-3.24 3.49-7.4 3.49-5 0-10.91-3.63-10.91-12 0-7.53 5.1-11.95 10.82-11.95a9.55 9.55 0 0 1 7.09 3h.09Zm.3 22.49a5.74 5.74 0 0 0-5.59-5.89h-.15a5.54 5.54 0 0 0-5.67 5.4v.44a5.61 5.61 0 0 0 5.26 5.94h.4a5.83 5.83 0 0 0 5.75-5.89Z" fill="hsla(0,0%,100%,0.9)"/></svg></a>
+                            <p class="copyright">LinkedIN Corporation &copy; 2023</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
